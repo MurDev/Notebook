@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Bloc Note</string>
+    <string name="mes_notes">Mes Notes</string>
+    <string name="titre_de_la_note">Titre de la note</string>
+    <string name="tapez_votre_texte">Tapez votre texte...</string>
+    <string name="ajouter">Ajouter</string>
+    <string name="title">Title</string>
+    <string name="description">Description</string>
+    <string name="recherche_notes">Recherche notes...</string>
+</resources>

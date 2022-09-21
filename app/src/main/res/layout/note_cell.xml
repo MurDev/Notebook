@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layoutNote"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="@drawable/note_tile_rounded_corner"
+    android:elevation="2sp"
+    android:layout_height="150dp"
+    android:padding="15dp"
+    android:layout_marginStart="6dp"
+    android:layout_marginEnd="6dp"
+    android:layout_marginBottom="12dp"
+    >
+
+    <TextView
+        android:id="@+id/cellTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/title"
+        android:fontFamily="@font/gilroy_bold"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        />
+
+    <TextView
+        android:id="@+id/cellDesc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="@string/description"
+        android:fontFamily="@font/gilroy_regular"
+        android:textSize="14sp"
+        android:textColor="@color/black"
+        />
+
+</LinearLayout>

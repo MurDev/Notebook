@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/mainBackground"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingTop="30dp"
+        android:paddingBottom="40dp"
+        android:background="@color/backgroundLightBlue">
+
+        <TextView
+            android:id="@+id/textMesNotes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12sp"
+            android:layout_marginTop="30sp"
+            android:layout_marginEnd="12sp"
+            android:text="@string/mes_notes"
+            android:fontFamily="@font/gilroy_bold"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+
+        <LinearLayout
+            android:id="@+id/layoutSearch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/layoutSearch"
+            android:elevation="2sp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:layout_marginStart="12sp"
+            android:layout_marginTop="20sp"
+            android:layout_marginEnd="12sp"
+            android:paddingStart="10sp"
+            android:paddingEnd="10sp">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/ic_search" />
+
+            <EditText
+                android:id="@+id/inputSearch"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginStart="5sp"
+                android:background="@null"
+                android:fontFamily="@font/gilroy_regular"
+                android:hint="@string/recherche_notes"
+                android:textColor="@color/black"
+                android:importantForAutofill="no"
+                android:textColorHint="#546E7A" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/notesRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:clipToPadding="false"
+        android:paddingTop="20dp"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="12dp" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:layout_weight="0.15">
+
+        <Button
+            android:id="@+id/buttonAddMain"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginEnd="35sp"
+            android:background="@drawable/button_add_main"
+            android:backgroundTint="@color/splashScreen"
+            android:drawableLeft="@drawable/ic_add"
+            android:drawableTint="@color/white"
+            android:fontFamily="@font/gilroy_medium"
+            android:gravity="center_vertical"
+            android:paddingStart="20dp"
+            android:paddingEnd="30dp"
+            android:text="@string/ajouter"
+            android:textAllCaps="false"
+            android:textColor="@color/white" />
+
+    </LinearLayout>
+
+
+</LinearLayout>
